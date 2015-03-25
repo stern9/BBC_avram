@@ -1,0 +1,423 @@
+<!doctype html>
+<html>
+<head>
+    <title>Avram's BBC</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    
+    body {
+        margin: 0;
+        font-family: arial,helvetica,sans-serif;
+    }
+
+    #topbar {
+        background-color: #7A0000;
+        width: 100%;
+        height: 40px;
+        color: white;
+    }
+
+    .fixedwidth {
+        width: 1050px;
+        margin: 0 auto;
+    }
+
+    #logodiv {
+        padding-top: 5px;
+        float: left;
+        border-right: 1px solid #990000;
+        padding-right: 10px;
+    }
+
+    #signindiv {
+        font-weight: bold;
+        padding: 10px 80px 14px 20px;
+        font-size: 0.9em;
+        float: left;
+        border-right: 1px solid #990000;
+    }
+
+    #topmenudiv {
+        float: left;
+    }
+
+    #topmenudiv ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    #topmenudiv li {
+        list-style: none;
+        font-weight: bold;
+        font-size: 0.9em;
+        border-right: 1px solid #990000;
+        height: 100%;
+        padding: 10px 20px 14px 20px;
+        float: left;
+    }
+
+    #searchdiv {
+        float: left;
+        padding: 5px 0 0 10px;
+    }
+
+    #searchdiv input {
+        height: 25px;
+        border: none;
+        font-size: 0.9em;
+        padding-left: 10px;
+        background-image: url("images/magnify.png"); 
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+
+    .break {
+        clear: both;
+    }
+
+    #newsbar {
+        background-color: #990000;
+        width: 100%;
+        height: 90px;
+        color: white;
+    }
+
+    #newsbar p {
+        margin: 0;
+        padding: 0;
+        padding-top: 10px;
+        float: left;
+    }
+
+    #newsheader {
+        font-size: 3em;
+
+
+    }
+
+    #uk {
+        font-size: 0.7em;
+        padding-left: 20px;
+    }
+
+    #rss {
+        float: right;
+        margin-top: 38px;
+    }
+
+    #rss img {
+        height: 14px;
+    }
+
+    #topicmenu {
+
+    }
+
+    #topicmenu ul {
+        background-color: #3E0C0D;
+        padding: 5px 0 0 5px;
+        margin: 0;
+        height: 20px;
+    }
+
+    #topicmenu li {
+        list-style: none;
+        font-size: 0.8em;
+        border-right: 1px solid #990000;
+        padding: 0 6px 0 6px;
+        float: left;
+        background-color: none;
+    }
+
+    .selected {
+        background-color: #EDEDED;
+        color: #666666;
+        height: 20px;
+        position: relative;
+        top: -4px;
+        padding-top: 4px !important;
+    }
+
+    #content {
+        width: 100%;
+        color: #535353;
+        font-size: 0.75em;
+    }
+
+    .date {
+        font-weight: bold;
+    }
+
+    h1 {
+        color: #1F4F82;
+        font-size: 2.5em; 
+    }
+
+    h2 {
+        color: #1F4F82;
+        font-size: 1.4em;
+        padding-top: 5px;
+    }
+
+    h3 {
+        color: #505050;
+        margin: 10px 0 10px 10px;
+        font-size: 1.8em;
+    }
+
+    .schoolimage {
+        float: left;
+    }
+
+    .andymurray {
+        float: left;
+    }
+
+    .newsitem {
+        position: relative;
+        left: 10px;
+        top: -15px;
+        width: 280px;
+        float: left;
+        font-size: 1.1em;
+    }
+
+    .newsitem a {
+        color: #1F4F82;
+        text-decoration: none;
+
+    }
+
+    .newsitem a:hover {
+        text-decoration: underline;
+    }
+
+    .video {
+        background-image: url("images/triangle.png"); 
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left: 20px;
+    }
+
+    .links {
+        line-height: 1.5em;
+    }
+
+    .live {
+        background-image: url("images/live.png"); 
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left: 27px;
+    }
+
+    #whatchlisten {
+        background-color: #EEEEEE;
+        float: right;
+        width: 380px;
+        height: 300px;
+        position: relative;
+        top: -350px;
+    }
+
+    .bullets {
+        float: right;
+        margin: 20px 10px 0 0;  
+    }
+
+    .leftarrow {
+        float: left;
+        border-right: 1px solid white;
+    }
+
+    .wlblock {
+        float: left;
+        background-color: #D1700E;
+        width: 144px;
+        border-right: 1px solid white;
+        
+    }
+
+
+    </style>  
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id ="topbar">
+
+            <div class="fixedwidth">
+
+                <div id="logodiv">
+
+                    <img src="images/bbclogo.png" />
+
+                </div>
+
+                <div id="signindiv">
+
+                    Sign In
+
+                </div>   
+
+                <div id="topmenudiv">
+
+                    <ul>
+
+                        <li>News</li>
+                        <li>Sport</li>
+                        <li>Weather</li>
+                        <li>iPlayer</li>
+                        <li>TV</li>
+                        <li>Radio</li>
+                        <li>More...</li>
+
+                    </ul>
+
+                </div> 
+
+                <div id="searchdiv">
+
+                    <input type="text" placeholder="Search" />
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="break"></div>
+
+        <div id ="newsbar">
+
+            <div class="fixedwidth">
+
+                <p id="newsheader">NEWS<span id="uk">UK</span></p>
+
+                <div id="rss">
+                    RSS <img src="images/rss.png">
+                </div>
+
+                <div class="break"></div>
+
+                <div id="topicmenu">
+
+                    <ul>
+
+                        <li>Home</li>
+                        <li>World</li>
+                        <li class="selected">UK</li>
+                        <li>Africa</li>
+                        <li>Asia</li>
+                        <li>Australia</li>
+                        <li>Europe</li>
+                        <li>Latin America</li>
+                        <li>Mid-East</li>
+                        <li>US & Canada</li>
+                        <li>Business</li>
+                        <li>Health</li>
+                        <li>Sci/Environment</li>
+                        <li>Tech</li>
+                        <li>Entertainment</li>
+                        <li style="border-right:none;">Video</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="break"></div>
+
+        <div id ="content">
+
+            <div class="fixedwidth">
+
+                <p><span class="date">29 January 2015</span> Last updated at 16:37 GMT</p>
+
+                <h1>School tables branded a 'nonsense'</h1>
+
+                <img class="schoolimage"src="images/school.jpg"/>
+
+
+                <div class="newsitem">
+
+                    <p>Government school league tables are branded a "nonsense", after numerous changes to the way grades are recognised left more schools failing.</p>
+
+                    <p class="links"><a class="live" href="http://www.bbc.com/news/education-31035004">'Period of transition'<a/><br/>
+
+                    <a class="video" href="http://www.bbc.com/news/education-30210311">School performance data explained<a/><br/>
+
+                    <a class="video" href="http://www.bbc.com/news/education-30991185">Secondary league tables: Best GCSE results<a/><br/>
+
+                    <a class="video" href="http://www.bbc.com/news/education-31023681">Secondary league tables 2014: Best A-level results<a/><br/>
+
+                    </p>   
+
+                </div>
+
+            </div>
+        </div>
+
+         <div class="break"></div>
+
+        <div id ="content">
+
+            <div class="fixedwidth">
+
+
+                <h1>Murray in fourth Aussie Open final</h1>
+
+                <img class="andymurray"src="images/andymurray.jpg"/>
+
+
+                <div class="newsitem">
+
+                    <p>Andy Murray comes storming back after a poor start to beat Tomas Berdych and reach his fourth Australian Open final.</p>
+
+                    <p class="links"><a class="video" href="http://www.bbc.com/sport/0/tennis/31034008">Williams to face Sharapova in final<a/><br/>
+
+                    <a class="video" href="http://www.bbc.com/sport/0/tennis/31018077">Vallverdu expected Murray reunion<a/><br/>
+
+                    <a class="video" href="http://www.bbc.com/sport/live/tennis/30540588">How Murray made the final <a/><br/>
+
+                    <a class="live" href="http://www.bbc.com/news/business-30878568">When to hang up the tennis racquet?<a/><br/>
+
+                    </p>    
+
+                </div>
+
+                <div id="whatchlisten">
+
+                    <img class="bullets"src="images/bullets.png">
+
+                    <h3>Watch/Listen</h3>
+
+                    <img src="images/leftarrow.png" class="leftarrow">
+
+                    <div class="wlblock">
+
+                        <img src="images/pic1.png">
+
+                        <p><a href="">Crossrail breaks through under City</a></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
